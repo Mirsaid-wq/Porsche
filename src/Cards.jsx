@@ -5,7 +5,10 @@ import panamera from "./Cars/Panamera.jpg";
 import Macan from "./Cars/Macan.jpg";
 import cayenne from "./Cars/Cayenne.jpg";
 import { useRef } from "react";
-
+import s550 from "./Cars/HOR_XB1_Porsche_550.webp";
+import carrere from "./Addings/Porsche-Carrera-GT-Profile-Large-500x375.png";
+import atl from "./Addings/Porsche-ATL-Northeast-Electric-lineup-jelly-2-taycan-cross-turismo.avif";
+import s959 from "./Cars/HOR_XB1_Porsche_959.webp";
 const PorscheCard = () => {
   const scrollRef = useRef(null);
 
@@ -42,6 +45,10 @@ const PorscheCard = () => {
           { name: "Panamera", img: panamera },
           { name: "Macan", img: Macan },
           { name: "Cayenne", img: cayenne },
+          { name: "550 Spyder", img: s550 },
+          { name: "Carrere GT", img: carrere },
+          { name: "Mission E", img: atl },
+          { name: "Porsche 959", img: s959 },
         ].map((car, idx) => (
           <div
             key={idx}
